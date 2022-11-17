@@ -1,13 +1,13 @@
 import sys
 sys.path.append(r"C:\Users\Mi\Desktop\telegram-python")
 
-from config import token
+import config
 import telebot
 
-userOne = 803056459
-userTwo = 685679598
+userOne = config.USER_ID_1
+userTwo = config.USER_ID_2
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(config.TOKEN)
 
 
 # @bot.message_handler(content_types=["photo"])

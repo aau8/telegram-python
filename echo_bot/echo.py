@@ -25,7 +25,7 @@ def echo_messages(message):
 		bot.send_message(userOne, message.text)
 		bot.send_message(userTwo, 'Message send')
 
-@bot.message_handler(content_types=['document'])
+@bot.message_handler(content_types=['animation'])
 def msg(message):
 	document = message.document
 	if (document.mime_type == 'video/mp4'):
